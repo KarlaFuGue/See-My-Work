@@ -25,15 +25,17 @@ section {
   background-image: url(file:///Users/karla/Desktop/1-University-of-Birmingham/See-My-Work/assets/images/02-hero-bg.jpg);
   background-size: cover;
   background-position:center;
-  margin-bottom: 35px;
+  margin-bottom: 50px;
 }
 main {
   display: grid;
-  margin: 0px 10px;
+  margin: 0px 20px;
   height: 1500px;
   width: fit-content;
-  grid-template-columns: 33% auto;
-  grid-template-rows: 25% 50% 25%;
+  column-gap: 40px;
+  row-gap: 40px;
+  grid-template-columns: 25% auto;
+  grid-template-rows: 200px auto 100px;
   grid-template-areas:
   "title content"
   "title content"
@@ -61,6 +63,10 @@ main {
   font-size: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.content {
+  display: flex;
+  align-items: center;
+}
 
 #myHeader {
   display: flex;
@@ -72,12 +78,40 @@ main {
   justify-content: flex-end;
   color: #58788C;
 }
-#title 1 {
-  grid-area:title;
-}
 
-#paragraph {
-  grid-area: content;
+#AboutMe
+ {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-right: solid green 2px;
+  padding-right: 15px;
+}
+#Work {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
+  border-right: solid green 2px;
+  padding-top: 20px;
+  padding-right: 15px;
+}
+#ContactMe {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-right: solid green 2px;
+  padding-right: 15px;
+}
+#projectsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 700px 207px 207px;
+  margin-bottom: 0px;
+  grid-template-areas: 
+    "Surf Surf"
+    "LED Calculator"
+    "Pastels Run"
+  ;
 }
 a:-webkit-any-link {
   color:#9B95BF;
@@ -86,9 +120,12 @@ a:-webkit-any-link {
 }
 
 h2{
+  display: flex;
   color: aquamarine;
+  font-size: 40px;
 }
 
 p {
   color: azure;
+  
 }
