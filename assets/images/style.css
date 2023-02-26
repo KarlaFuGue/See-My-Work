@@ -9,7 +9,7 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   margin: 0;
   padding: 0;
-  line-height: 1.5;
+  line-height: 1.2;
 }
 
 header {
@@ -19,6 +19,27 @@ header {
   grid-template-columns:33% auto;
 }
 
+section {
+  display: grid;
+  /* The Image used */
+  background-image: url(file:///Users/karla/Desktop/1-University-of-Birmingham/See-My-Work/assets/images/02-hero-bg.jpg);
+  background-size: cover;
+  background-position:center;
+  margin-bottom: 35px;
+}
+main {
+  display: grid;
+  margin: 0px 10px;
+  height: 1500px;
+  width: fit-content;
+  grid-template-columns: 33% auto;
+  grid-template-rows: 25% 50% 25%;
+  grid-template-areas:
+  "title content"
+  "title content"
+  "title content"
+  ;  
+}
 .navList {
   list-style: none;
   display: flex;
@@ -27,6 +48,12 @@ header {
   align-items: center;
   margin-right: 20px;
 
+}
+.hero {
+  display: flex;
+  height: 300px;
+  width: fit-content;
+  flex-direction: row;
 }
 
 .navigation-item {
@@ -45,23 +72,23 @@ header {
   justify-content: flex-end;
   color: #58788C;
 }
+#title 1 {
+  grid-area:title;
+}
 
+#paragraph {
+  grid-area: content;
+}
 a:-webkit-any-link {
   color:#9B95BF;
   cursor: pointer;
   text-decoration: underline;
 }
 
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
+h2{
+  color: aquamarine;
 }
 
 p {
-  margin: 0;
+  color: azure;
 }
