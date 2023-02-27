@@ -5,18 +5,18 @@
 }
 
 body {
-  background-color:black;
+  background-color: #212226;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+  margin: 50px;
+  padding: 30px;
   line-height: 1.2;
 }
 
 header {
-  background-color: #58788C;
+  background-color: #6D8C87;
   display: grid;
-  padding: 10px 0;
-  grid-template-columns:33% auto;
+  padding: 15px 0;
+  grid-template-columns:43% auto;
 }
 
 section {
@@ -74,12 +74,12 @@ main {
   align-content: end;
 }
 .heading {
-background-color: blue;
-padding: 20px;
-height: 25px;
-color: bisque;
-font-size: 18px;
-align-content: end;
+  background-color: rgba(255,255,255,0.8);
+  position: absolute;
+  margin-top: 70px;
+  padding: 20px;
+  color: #0A2126;
+  font-size: 18px;
 }
 .footer {
   display: flex;
@@ -91,30 +91,34 @@ align-content: end;
 
 #myHeader {
   display: flex;
-  background-color:#F28322;
+  background-color: #D9325E;
+  font-family: Cambria;
   font-size: 48px;
   justify-self: flex-end;
   align-items: center;
   align-content: center;
   justify-content: flex-end;
-  color: #58788C;
+  color: whitesmoke;
 }
 #heroGrid {
-  background-image: url(file:///Users/karla/Desktop/1-University-of-Birmingham/See-My-Work/assets/images/02-hero-bg.jpg);
+  background-image: url(/Users/karla/Desktop/1-University-of-Birmingham/See-My-Work/assets/images/Screenshot95.jpg);
+  background-size: cover;
 }
 #AboutMe
  {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  border-right: solid green 2px;
+  border-right: solid #647356 2px;
+  font-family: Segoe UI;
   padding-right: 15px;
 }
 #Work {
   display: flex;
   align-items: baseline;
   justify-content: flex-end;
-  border-right: solid green 2px;
+  border-right: solid #647356 2px;
+  font-family: Segoe UI;
   padding-top: 20px;
   padding-right: 15px;
 }
@@ -122,13 +126,14 @@ align-content: end;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  border-right: solid green 2px;
+  border-right: solid #647356 2px;
+  font-family: Segoe UI;
   padding-right: 15px;
 }
 #projectsGrid {
   margin: 10px;
   display: grid;
-  grid-template-rows: 700px 207px 207px;
+  grid-template-rows: 600px 186px 186px;
   grid-template-columns: 1fr 1fr;
   column-gap: 20px;
   row-gap: 20px;
@@ -142,47 +147,76 @@ align-content: end;
 #Surf {
   grid-area: Surf;
   background-image: url(/Users/karla/Desktop/1-University-of-Birmingham/See-My-Work/assets/images/02-portfolio-4.jpg);
-  border: 2px solid palevioletred;
+  border: 2px solid #944306;
   background-size: cover;
 
 }
 #LED {
   grid-area: LED;
   background-image: url(/Users/karla/Desktop/1-University-of-Birmingham/See-My-Work/assets/images/02-portfolio-1.jpg);
-  border: 2px solid palevioletred;
+  border: 3px solid #944306;
   background-size: cover;
 }
 #Calculator {
   grid-area: Calculator;
   background-image: url(/Users/karla/Desktop/1-University-of-Birmingham/See-My-Work/assets/images/02-portfolio-2.jpg);
-  border: 2px solid palevioletred;
+  border: 3px solid #944306;
   background-size: cover;
 }
 #Pastels {
   grid-area: Pastels;
   background-image: url(/Users/karla/Desktop/1-University-of-Birmingham/See-My-Work/assets/images/02-portfolio-3.jpg);
-  border: 2px solid palevioletred;
+  border: 3px solid #944306;
   background-size: cover;
 }
 #Run {
   grid-area: Run;
   background-image: url(/Users/karla/Desktop/1-University-of-Birmingham/See-My-Work/assets/images/02-run-buddy.jpg);
-  border: 2px solid palevioletred;
+  border: 3px solid #944306;
   background-size: cover;
 }
+#Bigheading {
+  background-color: rgba(255,255,255,0.8);
+  position: absolute;
+  margin-top: 500px;
+  padding: 20px;
+  color: #0A2126;
+  font-family: Noto Sans;
+  font-size: 18px;
+}
+
 a:-webkit-any-link {
-  color:#9B95BF;
+  font-family: TrebuchetMS;
+  font-size: 20px;
+  color:#F2C1AE;
   cursor: pointer;
   text-decoration: underline;
 }
 
 h2{
   display: flex;
-  color: aquamarine;
+  color: #647356;
   font-size: 40px;
 }
 
 p {
-  color: azure;
+  color: #A68263;
+  font-family: Helvetica Neue;
   
+}
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .header {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .header, .main {
+    width: 100%;
+  }
 }
