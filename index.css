@@ -16,6 +16,9 @@
     padding: 15px 0;
     grid-template-columns:43% auto;
   }
+  img {
+    border-radius: 50%;
+  }
   
   section {
     display: grid;
@@ -48,11 +51,17 @@
   
   }
   .hero {
-    background-image: url("/Users/karla/Desktop/1-University-of-Birmingham/See-My-Work/assets/images/Screenshot-2023.jpg");
     display: flex;
     height: 300px;
     width: fit-content;
     flex-direction: row;
+  }
+  .avatar {
+    position: absolute;
+    left: 150px;
+    top: 350px;
+    max-width: 550px;
+    z-index: 100;
   }
   
   .navigation-item {
@@ -99,8 +108,20 @@
     color: #090A0D;
   }
   #heroGrid {
-    background-image: url("/Users/karla/Desktop/1-University-of-Birmingham/See-My-Work/assets/images/Screenshot-2023.jpg");
+    background-image: url(assets/images/Screenshot-2023.jpg);
     background-size: cover;
+  }
+  #headline{
+    height: 30px;
+    background-color: #0A2126;
+    border-bottom: 5px solid #944306;
+    position: absolute;
+    right: 250px;
+    top: 350px;
+    font-family: TrebuchetMS;
+    padding: 25px;
+    max-width: 550px;
+    z-index: 100;
   }
   #AboutMe
    {
@@ -144,7 +165,7 @@
   }
   #Surf {
     grid-area: Surf;
-    background-image: url("/Users/karla/Desktop/1-University-of-Birmingham/See-My-Work/assets/images/02-portfolio-1.jpg");
+    background-image: url(assets/images/02-portfolio-4.jpg);
     border: 2px solid #944306;
     background-size: cover;
     cursor: pointer;
@@ -152,28 +173,28 @@
   }
   #LED {
     grid-area: LED;
-    background-image: url("/Users/karla/Desktop/1-University-of-Birmingham/See-My-Work/assets/images/02-portfolio-1.jpg");
+    background-image: url(assets/images/02-portfolio-1.jpg);
     border: 3px solid #944306;
     background-size: cover;
     cursor: pointer;
   }
   #Calculator {
     grid-area: Calculator;
-    background-image: url("/Users/karla/Desktop/1-University-of-Birmingham/See-My-Work/assets/images/02-portfolio-2.jpg");
+    background-image: url(assets/images/02-portfolio-2.jpg);
     border: 3px solid #944306;
-    background-size: cover;
+    background-position: inherit;
     cursor: pointer;
   }
   #Pastels {
     grid-area: Pastels;
-    background-image: url("/Users/karla/Desktop/1-University-of-Birmingham/See-My-Work/assets/images/02-portfolio-3.jpg");
+    background-image: url(assets/images/02-portfolio-3.jpg);
     border: 3px solid #944306;
-    background-size: cover;
+    background-position: inherit;
     cursor: pointer;
   }
   #Run {
     grid-area: Run;
-    background-image: url("/Users/karla/Desktop/1-University-of-Birmingham/See-My-Work/assets/images/02-run-buddy.jpg");
+    background-image: url(assets/images/02-run-buddy.jpg);
     border: 3px solid #944306;
     background-size: cover;
     cursor: pointer;
@@ -200,6 +221,9 @@
     display: flex;
     color: #647356;
     font-size: 40px;
+  }
+  h3{
+    color: #D7D0B4;
   }
   p {
     color: #A68263;
